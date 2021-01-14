@@ -1,8 +1,8 @@
 
 class Ordenador:
-    
-    def __init__(self):
-        self.li= [100,200,10,35,70,45]
+
+    def __init__(self, li):
+        self.li= li
         self.size= len(self.li)
         self.vezes=0
 
@@ -20,6 +20,7 @@ class Ordenador:
             if not change:
                 break
         print('lista final', self.li)
+li=[100,200,10,35,70,45]
 
-o= Ordenador()
+o= Ordenador(li)
 o.buble_sort()
